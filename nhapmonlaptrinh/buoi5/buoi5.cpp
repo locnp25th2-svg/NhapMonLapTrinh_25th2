@@ -4,15 +4,24 @@
 
 #include <iostream>
 using namespace std;
-int main() {
-    cout << "nhap so: ";
-        int n;
-        cin >> n;
-        if (n % 2 == 0) {
-            cout << 1 << endl;
-        }
-        else {
-            cout << 0 << endl;
-        }
-        return 0;
+void cau1() {
+    float a;
+    cout << "nhap diem: ";
+    cin >> a;
+    if (a >= 5) {
+        cout << "yeu" << endl;
     }
+    else if (a >= 7){
+        cout << "trung binh" << endl;
+}
+    else if (a >= 8) {
+              cout << "kha" << endl;
+}
+    else{
+                cout << "gioi" << endl;
+     }
+
+        }
+int main() {
+   cau1();
+}
