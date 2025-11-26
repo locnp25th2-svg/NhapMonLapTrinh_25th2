@@ -142,6 +142,112 @@ void cau7() {
         cout << "la mot tam giac vuong: " << endl;
     }
 }
-int main() {
-   cau7();
+void cau8() {
+    float a, b, c;
+    cout << "nhap a, b, c: ";
+    cin >> a >> b >> c;
+    if (a == 0 && b == 0 && c == 0) {
+        cout << "phuong trinh vo so nghiem: " << endl;
+    }
+    else if (a == 0 && b == 0 && c != 0) {
+        cout << "phuong trinh vo nghiem: " << endl;
+    }
+    else if (a == 0 && b != 0) {
+        cout << "phuong trinh co nghiem: " << -c / b << endl;
+    }
+    else if (a != 0 && b != 0 && c != 0) {
+        cout << "phuong trinh co nghiem: " << b * b - 4*a*c << endl;
+    }
+        float d = b * b - 4 * a * c;
+        cout << "phuong trinh co nghiem: " << -b / (2 * a) << endl;
+        cin >> d;
+    if (d > 0) {
+        cout << "phuong trinh vo nghiem: " << endl;
+    }
+    else if (d == 0) {
+        cout << "phuong trinh co 1 nghiem: " << -b / 2 * a << endl;
+    }
+    else {
+        cout << "x1 =: " << -b - sqrt(d) / 2 * a << endl;
+        cout << "x2 =: " << -b + sqrt(d)/ 2 * a << endl;
+    }
+
 }
+void cau9() {
+    int thang, nam;
+    cout << "nhap thang: ";
+    cin >> thang;
+    cout << "nhap nam: ";
+    cin >> nam;
+    if (thang == 1) {
+        cout << "thang " << thang << " co 31 ngay" << endl;
+    }
+    else if (thang == 2) {
+        if (nam % 4 == 0 && nam % 100 != 0 || (nam % 400))
+        cout << "thang " << thang << " co 28 ngay" << endl;
+    }
+    else if (thang == 3) {
+        cout << "thang " << thang << " co 31 ngay" << endl;
+    }
+    else if (thang == 4) {
+        cout << "thang " << thang << " co 30 ngay" << endl;
+    }
+    else if (thang == 5) {
+        cout << "thang " << thang << " co 31 ngay" << endl;
+    }
+    else if (thang == 6) {
+        cout << "thang " << thang << " co 30 ngay" << endl;
+    }
+    else if (thang == 7) {
+        cout << "thang " << thang << " co 31 ngay" << endl;
+    }
+    else if (thang == 8) {
+        cout << "thang " << thang << " co 31 ngay" << endl;
+    }
+    else if (thang == 9) {
+        cout << "thang " << thang << " co 30 ngay" << endl;
+    }
+    else if (thang == 10) {
+        cout << "thang " << thang << " co 31 ngay" << endl;
+    }
+    else if (thang == 11) {
+        cout << "thang " << thang << " co 30 ngay" << endl;
+    }
+    else if (thang == 12) {
+        cout << "thang " << thang << " co 31 ngay" << endl;
+    }
+    else {
+        cout << "1 nam chi co 12 thang , vui long nhap lai :" << endl;
+    }
+}
+void cau10() {
+    int ngay, thang, nam;
+    cout << "nhap ngay, thang, nam: ";
+    cin >> ngay >> thang >> nam;
+    if (ngay == 31 && thang == 12) {
+        cout << "ngay tiep theo la 1/1" << nam + 1 << endl;
+    }
+    else {
+        int ngaycuoithang;
+        if (thang == 1 || thang == 3 || thang == 5 || thang == 7 || thang == 8 || thang == 10 || thang == 12)
+            ngaycuoithang = 31;
+        else if (thang == 4 || thang == 6 || thang == 9 || thang == 11)
+            ngaycuoithang = 30;
+        else {
+            if (nam % 4 == 0 && nam % 100 != 0 || ( nam % 400 = 0))
+                ngaycuoithang = 29;
+            else
+                ngaycuoithang = 28;
+        }
+        if (ngay < ngaycuoithang)
+            cout << "ngay tiep theo la: " << ngay + 1 << thang << "/" << nam << endl;
+        else
+            cout << "ngay tiep theo la: " << thang + 1 << "/" << nam << endl;
+    }
+}
+void cau11() {
+    
+}
+    int main() {
+        cau11
+    }
