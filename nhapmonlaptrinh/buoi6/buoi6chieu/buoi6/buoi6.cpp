@@ -150,7 +150,50 @@ void cau11() {
 	if (timthay == false)
 		cout << "khong tim thay phuong an phu hop: " << endl;
 }
+void cau12() {
+	for (int ga = 0; ga <= 36; ga++) {
+		int cho = 36 - ga;
+		if (2 * ga + 4 * cho == 100) {
+			cout << " so ga: " << ga << "so cho: " << cho << endl;
+		}
+	}
+}
+void cau13() {
+	bool isLeapYear(int year) {
+		if (year % 400 == 0) return true;
+		if (year % 100 == 0) return false;
+		if (year % 4 == 0) return true;
+		return false;
 
+		} 
+		
+	int main() {
+		int day, month, year;
+		cout << "Nhap ngay: ";
+		cin >> day;
+		cout << "Nhap thang: ";
+		cin >> month;
+		cout << "Nhap nam: ";
+		cin >> year;
+		int daysInMonth[] = { 0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+		if (isLeapYear(year)) {
+			daysInMonth[2] = 29;
+		}
+		day++;
+		if (day > daysInMonth[month]) {
+			day = 1;
+			month++;
+			
+			if (month > 12) {
+				month = 1;
+				year++;
+			}
+		}
+		cout << "Ngay ke tiep la: "
+			<< day << "/" << month << "/" << year << endl;
+		return 0;
+	}
+}
 int main() {
-cau11();
+cau13();
 }
