@@ -18,7 +18,7 @@
     <ClCompile Include="buoi5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="linkedList.h">
+    <ClCompile Include="LinkedList.h">
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="Account.h">

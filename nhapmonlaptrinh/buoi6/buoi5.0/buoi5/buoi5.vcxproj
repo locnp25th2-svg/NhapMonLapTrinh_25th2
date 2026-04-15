@@ -125,7 +125,7 @@
   <ItemGroup>
     <ClCompile Include="buoi5.cpp" />
     <ClCompile Include="Account.h" />
-    <ClCompile Include="linkedList.h" />
+    <ClCompile Include="LinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
